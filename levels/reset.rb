@@ -13,7 +13,7 @@ setup do
 end
 
 solution do
-  return false unless (repo.status.files["to_commit_second.rb"].nil? || repo.status.files["to_commit_second.rb"].stage.nil?) && File.exists?("to_commit_second.rb")
+  return false unless (repo.status.files["to_commit_second.rb"].nil? || repo.status.files["to_commit_second.rb"].stage.nil?) && File.exist?("to_commit_second.rb")
   return false if (repo.status.files["to_commit_first.rb"].nil? || repo.status.files["to_commit_first.rb"].stage.nil?)
   true
 end

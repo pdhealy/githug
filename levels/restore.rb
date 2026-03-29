@@ -20,7 +20,7 @@ setup do
 end
 
 solution do
-  return false unless File.exists?('file3')
+  return false unless File.exist?('file3')
   true
 end
 

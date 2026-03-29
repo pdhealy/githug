@@ -13,7 +13,7 @@ setup do
 end
 
 solution do
-  return false unless File.exists?("newfile.rb") && repo.status.files.keys.include?("newfile.rb")
+  return false unless File.exist?("newfile.rb") && repo.status.files.keys.include?("newfile.rb")
   return false if repo.status.files["newfile.rb"].untracked || repo.commit_count > 1
   true
 end

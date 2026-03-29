@@ -36,6 +36,21 @@ If you get a complaint about permissions, you can rerun the command with `sudo`:
 
 An unofficial _Docker_ image for this project by [@odiraneyya](https://github.com/odiraneyya) is available on ([Docker Hub](https://hub.docker.com/r/orwa84/githug)).
 
+#### Development with Dev Containers
+
+This repository includes a VS Code Dev Container in `.devcontainer/` for a reproducible local development environment.
+
+1. Install Docker Desktop and the VS Code extension **Dev Containers** (`ms-vscode-remote.remote-containers`).
+2. Open this repository in VS Code.
+3. Run the command palette action **Dev Containers: Reopen in Container**.
+4. Wait for the image to build and dependencies to install (`bundle install` runs automatically).
+
+Once the container is ready, use the integrated terminal:
+
+  bundle exec rspec
+  bundle exec rake
+  bundle exec ruby bin/githug
+
 ### Starting the Game
 
 After the gem is installed change directory to the location where you want the game-related assets to be stored.

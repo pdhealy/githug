@@ -11,7 +11,7 @@ setup do
 end
 
 solution do
-  (repo.status.files["deleteme.rb"].nil? || repo.status.files["deleteme.rb"].stage.nil?) && File.exists?("deleteme.rb")
+  (repo.status.files["deleteme.rb"].nil? || repo.status.files["deleteme.rb"].stage.nil?) && File.exist?("deleteme.rb")
 end
 
 hint do
